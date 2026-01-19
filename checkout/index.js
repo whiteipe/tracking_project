@@ -8,6 +8,10 @@ const funnelJson = {
         title: "BugMD",
         addOns: [
             {
+                keyName: "FB_PIXEL_ID",
+                keyValue: "11111111111"
+            },
+            {
                 keyName: "Purchase_Event_FB",
                 keyValue: "2",
             },
@@ -148,7 +152,7 @@ const funnelJson = {
             {
                 id: 1,
                 name: "Google",
-                keyValue: "GTM-MRJVL9L",
+                keyValue: "GTM-N22ZVJ8",
             },
         ],
         pages: [
