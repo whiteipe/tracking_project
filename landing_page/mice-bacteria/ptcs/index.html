@@ -1,0 +1,583 @@
+<!DOCTYPE html><!--  Last Published: Fri Jul 04 2025 12:43:02 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="6867c5f945e643c1267d88d9" data-wf-site="6867c5f945e643c1267d88da">
+
+<head>
+  <meta charset="utf-8">
+  <title>BugMD</title>
+  <meta content="BugMD" name="description">
+  <meta content="BugMD" property="og:title">
+  <meta content="BugMD" property="og:description">
+  <meta content="BugMD" property="twitter:title">
+  <meta content="BugMD" property="twitter:description">
+  <meta property="og:type" content="website">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/components.css" rel="stylesheet" type="text/css">
+  <link href="css/ptcs-template-4ea0c9f952a-a4b8af11584b1.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script
+    type="text/javascript">WebFont.load({ google: { families: ["Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic", "Varela:400"] } });</script>
+  <script
+    type="text/javascript">!function (o, c) { var n = c.documentElement, t = " w-mod-"; n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch") }(window, document);</script>
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
+  <script>
+    // Get values from PHP variables
+    const lp1 = "<?php echo htmlspecialchars($lp1, ENT_QUOTES, 'UTF-8'); ?>";
+    const dynamicImg = "<?php echo htmlspecialchars($img, ENT_QUOTES, 'UTF-8'); ?>";
+    // Capture the full current URL
+    let [baseUrl, fragment] = window.location.href.split("#");
+    let url = new URL(baseUrl);
+    let searchParams = new URLSearchParams(url.search);
+    // Remove all existing lpv parameters
+    while (searchParams.has("lpv")) {
+      searchParams.delete("lpv");
+    }
+    // Add the single correct lpv value
+    if (lp1) {
+      searchParams.append("lpv", lp1);
+    }
+    // Add or update img parameter if we have a dynamic value
+    if (dynamicImg) {
+      const existingImg = searchParams.get("img");
+      if (existingImg !== dynamicImg) {
+        searchParams.set("img", dynamicImg); // Add or update img
+      }
+    }
+    // Reconstruct the full URL
+    const newUrl = `${url.origin}${url.pathname}?${searchParams.toString()}${fragment ? '#' + fragment : ''}`;
+    // Update the URL in the address bar without reloading
+    window.history.replaceState('', '', newUrl);
+  </script>
+  <script type="text/javascript"
+    src="https://trk.bugmd.com/pretrack.js?rtkcmpid=<?php echo htmlspecialchars($redtrack, ENT_QUOTES, 'UTF-8'); ?>"></script>
+</head>
+
+<body class="body">
+  <div class="content">
+    <div class="container">
+      <div class="w-layout-hflex column-holder">
+        <div class="w-layout-vflex main-column max-width">
+          <div class="row">
+            <div class="top-bar">
+              <div>Advertorial</div>
+            </div>
+            <h1 class="title h1">
+              <?php echo htmlspecialchars($headlineParam); ?>
+            </h1>
+            <div class="w-layout-hflex date-holder">
+              <div class="w-layout-hflex autor-info"><img src="images/1.jpg" loading="lazy" alt="" class="autor-image">
+                <div class="w-layout-vflex autor-name-wrap">
+                  <div class="autor-name"><strong>Andrew Walker</strong></div>
+                  <div class="date w-embed w-script">
+                    <p class="author"><span id="currentDate">Date</span></p>
+                    <script>
+                      function getCurrentDateUS() {
+                        const options = { timeZone: 'America/New_York', day: 'numeric', month: 'long', year: 'numeric' };
+                        const formatter = new Intl.DateTimeFormat('en-US', options);
+                        return formatter.format(new Date());
+                      }
+                      document.addEventListener("DOMContentLoaded", function () {
+                        const dateElement = document.getElementById("currentDate");
+                        if (dateElement) {
+                          dateElement.textContent = getCurrentDateUS();
+                        }
+                      });
+                    </script>
+                  </div>
+                </div>
+              </div>
+              <a href="https://twitter.com/intent/tweet?text=" target="_blank"
+                class="tweeter-button hide w-inline-block">
+                <div class="svg-icon w-embed"><svg width="18" height="18" viewbox="0 0 512 512" fill="#ffffff"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
+                    </path>
+                  </svg></div>
+                <div>Tweet</div>
+              </a>
+            </div>
+            <a href="https://trk.bugmd.com/preclick" target="_blank" class="asset-holder small-space w-inline-block">
+              <img src="<?php echo htmlspecialchars($imageUrl ?: 'images/2.jpg'); ?>" loading="eager"
+                sizes="(max-width: 479px) 96vw, (max-width: 767px) 97vw, (max-width: 991px) 98vw, 800px" alt=""
+                class="full-image" style="opacity: <?php echo $imageUrl ? '1' : '1'; ?>">
+            </a>
+            <p class="quote">"I spend my days getting rid of pests for other people, <strong>but I couldn't get these
+                disgusting & destructive mice out of my house.”</strong>
+            </p>
+            <div class="rich-text w-richtext">
+              <p>&quot;For 15 years, I&#x27;ve been an exterminator. I&#x27;ve dealt with every bug you can imagine -
+                roaches, bed bugs, spiders. But the one thing that was driving my wife Elena and I absolutely crazy?
+                <strong>Mice</strong> getting into our kitchen and getting into our food, and the treats she baked.
+              </p>
+              <p>Elena has always been passionate about baking. She&#x27;d spend hours perfecting her recipes,
+                researching new techniques, and dreaming about opening her own bakery someday.</p>
+              <p>But these mice were also there. They would show up every single time she started to bake.</p>
+              <p>I&#x27;m telling you, it was so annoying. Elena would find mice droppings in her flour, footprints
+                across the counters, and dirty dander inside her freshly baked cakes. As a pest control expert, I was
+                frustrated that I couldn&#x27;t solve this problem in my own home.</p>
+              <p>These disgusting little pests were slowly ruining Elena&#x27;s favorite thing to do, and it was driving
+                her nuts.&quot;</p>
+            </div>
+            <h2 class="title colored"><strong>The Day The Mice Crossed the Line</strong></h2>
+            <div class="rich-text w-richtext">
+              <p>&quot;It&#x27;s crazy how something that starts out so innocent can completely destroy your life.</p>
+              <p>At first, Elena would just find a handful of mice droppings here and there, especially when food was on
+                the counter. Not a huge deal, right? But then the mice got worse…</p>
+              <p>She had to start cleaning the kitchen every single day, but the mice would still find their way into
+                everything - her flour, her sugar, even chip bags and pasta boxes in our pantry.</p>
+              <p>Then came the morning that changed everything. Elena had just finished baking her famous chocolate chip
+                cookies for our daughter&#x27;s 8th birthday party.</p>
+              <p>My heart sank when I walked into the kitchen to grab my coffee and saw mice droppings all over the
+                cookies. At that same moment, my daughter and her friends came running through the door, heading
+                straight for the dessert.</p>
+            </div>
+            <a href="https://trk.bugmd.com/preclick" target="_blank"
+              class="asset-holder bottom-small w-inline-block"><img src="images/33.jpg" loading="lazy"
+                sizes="(max-width: 1408px) 100vw, 1408px" alt="" class="image-asset"></a>
+            <div class="rich-text w-richtext">
+              <p>I had to jump in front of the girls to stop them and Elena threw the entire batch away right in front
+                of the kids. The heartbreak on my daughter&#x27;s face was soul crushing.</p>
+              <p>&quot;That&#x27;s when it hit me - these weren&#x27;t just annoying pests anymore. They were completely
+                out of control.&quot;</p>
+              <p>&quot;Being a pest control expert who can&#x27;t protect his own family from bugs? That felt like a
+                complete joke.</p>
+              <p>The embarrassment was eating me alive. Here I am, supposed to be the neighborhood pest expert, and my
+                wife can&#x27;t even bake without these disgusting invaders contaminating everything.</p>
+              <p><strong>Have you ever felt like a complete failure at the one thing you&#x27;re supposed to be good at?
+                  That&#x27;s exactly how I felt watching Elena&#x27;s passion for baking get destroyed by
+                  mice.&quot;</strong></p>
+            </div>
+            <h2 class="title colored"><strong>I Tried Mousetraps, Poisons, and Even Ultrasonic Devices</strong></h2>
+            <div class="rich-text w-richtext">
+              <p>&quot;I wasn&#x27;t willing to sit on my hands and do nothing. That&#x27;s when I started to look for
+                something to help... But nothing really did.</p>
+              <p>Naturally, being an exterminator, I wanted to try everything in my arsenal. <strong>The first solution
+                  was heavy-duty mouse traps.</strong> Elena refused to let me use those dangerous contraptions in the
+                kitchen where we eat, especially with our daughter around. She was right - who wants to deal with messy
+                cleanup of dead bodies? Or a child&#x27;s broken finger?</p>
+              <p>I tried <strong>poison baits...</strong> but having that poison spread around with my child in the
+                house was just too dangerous.</p>
+              <p>Physical barriers and mouse-proofing seemed promising at first... I sealed up every crack and hole I
+                could find around the house and didn&#x27;t see mice for about a week. But then they found new ways into
+                the kitchen like nothing had changed - turns out mice teeth are strong enough to chew through almost
+                anything, and it&#x27;s nearly impossible to cover every single entryway.</p>
+              <p>I even tried those ultrasonic repellers that are supposed to drive mice away with sound waves. Complete
+                waste of money - the mice couldn&#x27;t care less about those things.</p>
+              <p>The frustration was overwhelming. I would think every morning, &#x27;What kind of pest control expert
+                can&#x27;t get mice out of his own kitchen?&#x27; It was humiliating.&quot;</p>
+            </div>
+            <a href="https://trk.bugmd.com/preclick" target="_blank"
+              class="asset-holder bottom-no-space w-inline-block"><img src="images/4.jpg" loading="lazy"
+                sizes="(max-width: 1408px) 100vw, 1408px" alt="" class="image-asset"></a>
+            <h2 class="title colored"><strong>My Dad&#x27;s Best Friend Had The Secret All Along</strong></h2>
+            <div class="rich-text w-richtext">
+              <p>&quot;But then I got lucky... and I mean really lucky.</p>
+              <p>My dad&#x27;s best friend Charles surprised me by stopping by one weekend. Charles had been in pest
+                control for over 30 years before he retired.</p>
+              <p>I was pacing in my kitchen when Charles came in and saw me.</p>
+              <p class="quote gray">&#x27;You look stressed. What&#x27;s going on?&#x27; he asked. So I told him about
+                our mice nightmare.</p>
+              <p>Charles just chuckled. &#x27;There&#x27;s easier ways to handle mice than all that chemical
+                stuff.&#x27;</p>
+              <p>He went to his truck and came back with a small pouch.</p>
+              <p>&#x27;<strong>Vamoose</strong>,&#x27; he said. &#x27;Been using this for years. Works better than
+                anything I ever sprayed.&#x27;</p>
+              <p>Now Charles&#x27;s no fool - he built one of the most successful pest control businesses in the state.
+                If he said something worked, I listened.</p>
+              <p>But honestly? A little pouch? I thought it sounded too simple. Turns out I was wrong.&quot;</p>
+              <ul role="list" class="list-dot">
+                <li class="dot-list-item"><a href="https://trk.bugmd.com/preclick"><strong>Vamoose</strong></a> uses
+                  something called &#x27;<strong>Tri-Fusion Repel Matrix™</strong>&#x27; formula to repel mice.</li>
+                <li class="dot-list-item">The Tri-Fusion Repel Matrix™ combines citronella, corn mint, and linseed oils
+                  that attack mice in three ways at the same time. And since it&#x27;s made with plant-based oils, there
+                  are no harsh chemicals affecting you or your family.</li>
+              </ul>
+              <p><strong>How can an essential oil pouch be so effective? Well, the science actually makes perfect
+                  sense.</strong></p>
+              <p><strong>This Tri-Fusion Repel Matrix™ starts by using citronella oil. Which works by overwhelming a
+                  mouse&#x27;s sense of smell, confusing and &quot;blinding&quot; them to their surroundings. This
+                  sabotages their ability to navigate.¹</strong></p>
+              <p><strong>At the same time, corn mint oil sets off a panic response in the rodent&#x27;s brain, like what
+                  happens if a mouse smells the urine of a predator. This forces mice to run away thanks to the
+                  automatic release of panic hormones.²</strong></p>
+              <p><strong>Finally, linseed oil cranks the power of Vamoose&#x27;s other ingredients to 100, acting as a
+                  multiplier while making the molecules stick around far longer. For long-term protection.</strong></p>
+              <p>All you have to do is place your Vamoose pouches in strategic spots. Such as your garage, attic, or
+                basement. To keep mice away. And unlike those other harsh chemical pesticides, it&#x27;s safe* around
+                kids and pets*.&quot;</p>
+              <p>*When it&#x27;s used as directed.</p>
+            </div>
+            <a href="https://trk.bugmd.com/preclick" target="_blank"
+              class="asset-holder bottom-small w-inline-block"><img src="images/5.jpg" loading="lazy"
+                sizes="(max-width: 1408px) 100vw, 1408px" alt="" class="image-asset"></a>
+            <div class="rich-text w-richtext">
+              <p>&quot;I can&#x27;t believe how well this stuff actually works!</p>
+              <p>It&#x27;s also so easy to use! Just place the pouch in strategic spots and replace it once a month -
+                that&#x27;s it!</p>
+              <p><strong>Now, Elena can bake again without worrying about mice getting into her flour or ruining any
+                  other treats. For the first time in months, she&#x27;s back to enjoying being in the kitchen.</strong>
+              </p>
+              <p><strong>It&#x27;s been 2 months since we started to use Vamoose. We placed pouches where we had been
+                  seeing mice activity and they started staying away immediately. I haven&#x27;t seen a single mouse or
+                  their droppings since!</strong></p>
+              <p>At this point, I keep several pouches around the house so we&#x27;re always prepared. I have one in the
+                kitchen, one in my work truck, and I even keep extras to give to friends if they need it.</p>
+              <p>That&#x27;s right, after 15 years as an exterminator, the best mouse solution I found wasn&#x27;t in my
+                truck full of chemicals - it was this Vamoose!&quot;</p>
+            </div>
+            <h2 class="title colored">Please Don&#x27;t Waste $1,000s on Ruined Food &amp; Fake Anti-Mice Solutions Like
+              I Did… Get Vamoose Before It&#x27;s Too Late</h2>
+            <a href="https://trk.bugmd.com/preclick" target="_blank"
+              class="asset-holder bottom-small top-no-space w-inline-block"><img src="images/6.jpg" loading="lazy"
+                sizes="(max-width: 1408px) 100vw, 1408px" alt="" class="image-asset"></a>
+            <div class="rich-text no-negative w-richtext">
+              <p>&quot;Please, don&#x27;t make the same mistake that I did!</p>
+              <p>I wish I could have saved myself the trouble and chosen Vamoose as my go-to before all that wasted
+                food, money, and time.</p>
+              <p>Ever since my family started to use Vamoose, the mice haven&#x27;t been a problem. I even recommended
+                it to friends and neighbors!</p>
+              <p>Their experience was just as successful. From families dealing with kitchen invasions to people tired
+                of expensive exterminator bills, this stuff works for everyone.</p>
+              <p>Elena has her baking passion back. Our daughter can also have birthday parties with zero worry about
+                contaminated treats.</p>
+              <p>And I&#x27;m way less stressed knowing I found a solution that actually protects my family&#x27;s
+                kitchen without filling our home with toxic chemicals.</p>
+              <p><strong>If you&#x27;re dealing with mice – DON&#x27;T WAIT FOR IT TO GET WORSE.</strong></p>
+              <p><strong>You MUST try Vamoose.</strong> It&#x27;s incredibly affordable and might be exactly what you
+                need like it was for my family.</p>
+              <p>However, I learned that these sell out really fast during peak rodent season.&quot;<a
+                  href="https://trk.bugmd.com/preclick"><strong> Be sure to get Vamoose before they&#x27;re gone. They
+                    are currently offering a limited-time 68% discount. Check to see if it&#x27;s still
+                    available&gt;&gt;&gt;</strong></a></p>
+            </div>
+            <div class="cta-button-wrapper">
+              <a href="https://trk.bugmd.com/preclick" target="_blank" class="btn-primary v2 w-button"><strong>CLAIM UP
+                  TO 68% OF NOW</strong></a>
+              <link rel="prefetch" href="https://trk.bugmd.com/preclick">
+            </div>
+            <h2 class="title colored"><strong>The Secret Behind Vamoose</strong></h2>
+            <a href="https://trk.bugmd.com/preclick" target="_blank"
+              class="asset-holder bottom-small top-no-space w-inline-block">
+              <div class="video-holder hide">
+                <div>
+                  <div class="video-embed w-embed"><video id="video" autoplay="" muted="" loop="" playsinline=""
+                      preload="auto" style="width: 100%; height:100%; object-fit: cover;">
+                      <source src="https://about.bugmd.com/disvms/videos/05-transcode.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video></div>
+                </div>
+              </div>
+              <div class="w-embed"> <video id="video" autoplay="" muted="" loop="" playsinline="" preload="auto"
+                  style="width: 100%; height:100%; object-fit: cover;">
+                  <source src="https://about.bugmd.com/disvms/videos/05-transcode.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video></div>
+            </a>
+            <div class="rich-text w-richtext">
+              <ul role="list" class="list">
+                <li class="list-item">Vamoose uses three powerful plant-based oils that scientists have <strong>proven
+                    to be effective against mice and other rodents.</strong> The Tri-Fusion Repel Matrix™ formula
+                  combines citronella oil that overwhelms a mouse&#x27;s sense of smell, corn mint oil that triggers
+                  panic responses in their brains, and linseed oil that acts as a multiplier for long-term protection.
+                </li>
+                <li class="list-item">And here&#x27;s what makes Vamoose different from any other essential oil product:
+                  because instead of using just one approach, the tri-fusion formula combines all three oils that work
+                  together to attack mice in three devastating ways at the same time.</li>
+              </ul>
+              <ul role="list" class="list">
+                <li class="list-item"><strong>Citronella oil confuses and blinds them, corn mint oil triggers panic
+                    hormones forcing them to flee, and linseed oil amplifies the effects while extending
+                    protection.³</strong></li>
+                <li class="list-item">These pouches are incredibly versatile - you can place them in your garage, attic,
+                  basement, anywhere mice might be hiding. Plus, unlike chemical sprays that you worry about using
+                  around your family, this plant-powered formula is safe around kids and pets!&quot;</li>
+              </ul>
+            </div>
+            <h2 class="title colored"><strong>Thousands Of Happy Customers Are Living Mice-Free</strong></h2>
+            <a href="https://trk.bugmd.com/preclick" target="_blank"
+              class="asset-holder bottom-small top-no-space w-inline-block"><img src="images/7.jpg" loading="lazy"
+                sizes="(max-width: 1408px) 100vw, 1408px" alt="" class="image-asset"></a>
+            <div class="rich-text no-negative w-richtext">
+              <p>If you're still not sure about Vamoose, just look at what real customers are saying. People everywhere are finally able to enjoy being in their homes again:</p>
+            </div>
+            <div class="w-layout-vflex comment-text-wrapper">
+              <div class="w-layout-vflex comment-text-item">
+                <div class="w-layout-hflex body-reviewer-info"><img src="images/8.jpg" loading="lazy" alt=""
+                    class="body-reviewer-image">
+                  <div class="w-layout-vflex body-reviewr-info-item">
+                    <div class="body-reviewer-name"><strong>Avril S.</strong></div>
+                    <div class="svg-icon stars w-embed"><svg xmlns="http://www.w3.org/2000/svg" fill="none" height="16"
+                        viewbox="0 0 100 16" width="100">
+                        <g fill="#fab73c">
+                          <path
+                            d="m3.43707 15.206c-.36744.1885-.78439-.1418-.71014-.5635l.7901-4.5026-3.353629-3.19468c-.313183-.2989-.150404-.8453.269395-.90432l4.662524-.66254 2.07901-4.11897c.18753-.371245.6949-.371245.88243 0l2.07904 4.11897 4.6625.66254c.4198.05902.5826.60542.2684.90432l-3.3526 3.19468.7901 4.5026c.0742.4217-.3427.752-.7102.5635l-4.17988-2.1475-4.178 2.1475z">
+                          </path>
+                          <path
+                            d="m24.5668 15.206c-.3675.1885-.7844-.1418-.7102-.5635l.7901-4.5026-3.3536-3.19468c-.3132-.2989-.1504-.8453.2694-.90432l4.6625-.66254 2.079-4.11897c.1876-.371245.6949-.371245.8825 0l2.079 4.11897 4.6625.66254c.4198.05902.5826.60542.2684.90432l-3.3526 3.19468.7901 4.5026c.0742.4217-.3427.752-.7102.5635l-4.1799-2.1475-4.178 2.1475z">
+                          </path>
+                          <path
+                            d="m45.6967 15.206c-.3675.1885-.7844-.1418-.7102-.5635l.7901-4.5026-3.3536-3.19468c-.3132-.2989-.1504-.8453.2694-.90432l4.6625-.66254 2.079-4.11897c.1875-.371245.6949-.371245.8824 0l2.079 4.11897 4.6626.66254c.4198.05902.5826.60542.2684.90432l-3.3527 3.19468.7901 4.5026c.0743.4217-.3427.752-.7101.5635l-4.1799-2.1475-4.178 2.1475z">
+                          </path>
+                          <path
+                            d="m66.8264 15.206c-.3675.1885-.7844-.1418-.7102-.5635l.7901-4.5026-3.3536-3.19468c-.3132-.2989-.1504-.8453.2694-.90432l4.6625-.66254 2.079-4.11897c.1875-.371245.6949-.371245.8824 0l2.079 4.11897 4.6626.66254c.4198.05902.5826.60542.2684.90432l-3.3527 3.19468.7901 4.5026c.0743.4217-.3427.752-.7101.5635l-4.1799-2.1475-4.178 2.1475z">
+                          </path>
+                          <path
+                            d="m87.9562 15.206c-.3674.1885-.7844-.1418-.7101-.5635l.7901-4.5026-3.3536-3.19468c-.3132-.2989-.1504-.8453.2694-.90432l4.6625-.66254 2.079-4.11897c.1875-.371245.6949-.371245.8824 0l2.079 4.11897 4.6626.66254c.4198.05902.5825.60542.2684.90432l-3.3527 3.19468.7901 4.5026c.0743.4217-.3427.752-.7101.5635l-4.1799-2.1475-4.178 2.1475z">
+                          </path>
+                        </g>
+                      </svg></div>
+                  </div>
+                </div>
+                <p class="comment-paragreaph">“Since I started using Vamoose I haven't seen a mouse. I purchased the
+                  glue traps, powder, and I continued to see a mouse running around the house but with Vamoose I haven't
+                  seen a mouse …I place them in every nook and cranny where I've seen mice. They're convenient and not
+                  at all messy.”
+                </p><img src="images/9.jpg" loading="lazy" sizes="(max-width: 1408px) 100vw, 1408px" alt=""
+                  class="feedback-produc-image">
+              </div>
+              <div class="w-layout-vflex comment-text-item last">
+                <div class="w-layout-hflex body-reviewer-info"><img src="images/10.jpg" loading="lazy" alt=""
+                    class="body-reviewer-image">
+                  <div class="w-layout-vflex body-reviewr-info-item">
+                    <div class="body-reviewer-name"><strong>Arnette R. </strong></div>
+                    <div class="svg-icon stars w-embed"><svg xmlns="http://www.w3.org/2000/svg" fill="none" height="16"
+                        viewbox="0 0 100 16" width="100">
+                        <g fill="#fab73c">
+                          <path
+                            d="m3.43707 15.206c-.36744.1885-.78439-.1418-.71014-.5635l.7901-4.5026-3.353629-3.19468c-.313183-.2989-.150404-.8453.269395-.90432l4.662524-.66254 2.07901-4.11897c.18753-.371245.6949-.371245.88243 0l2.07904 4.11897 4.6625.66254c.4198.05902.5826.60542.2684.90432l-3.3526 3.19468.7901 4.5026c.0742.4217-.3427.752-.7102.5635l-4.17988-2.1475-4.178 2.1475z">
+                          </path>
+                          <path
+                            d="m24.5668 15.206c-.3675.1885-.7844-.1418-.7102-.5635l.7901-4.5026-3.3536-3.19468c-.3132-.2989-.1504-.8453.2694-.90432l4.6625-.66254 2.079-4.11897c.1876-.371245.6949-.371245.8825 0l2.079 4.11897 4.6625.66254c.4198.05902.5826.60542.2684.90432l-3.3526 3.19468.7901 4.5026c.0742.4217-.3427.752-.7102.5635l-4.1799-2.1475-4.178 2.1475z">
+                          </path>
+                          <path
+                            d="m45.6967 15.206c-.3675.1885-.7844-.1418-.7102-.5635l.7901-4.5026-3.3536-3.19468c-.3132-.2989-.1504-.8453.2694-.90432l4.6625-.66254 2.079-4.11897c.1875-.371245.6949-.371245.8824 0l2.079 4.11897 4.6626.66254c.4198.05902.5826.60542.2684.90432l-3.3527 3.19468.7901 4.5026c.0743.4217-.3427.752-.7101.5635l-4.1799-2.1475-4.178 2.1475z">
+                          </path>
+                          <path
+                            d="m66.8264 15.206c-.3675.1885-.7844-.1418-.7102-.5635l.7901-4.5026-3.3536-3.19468c-.3132-.2989-.1504-.8453.2694-.90432l4.6625-.66254 2.079-4.11897c.1875-.371245.6949-.371245.8824 0l2.079 4.11897 4.6626.66254c.4198.05902.5826.60542.2684.90432l-3.3527 3.19468.7901 4.5026c.0743.4217-.3427.752-.7101.5635l-4.1799-2.1475-4.178 2.1475z">
+                          </path>
+                          <path
+                            d="m87.9562 15.206c-.3674.1885-.7844-.1418-.7101-.5635l.7901-4.5026-3.3536-3.19468c-.3132-.2989-.1504-.8453.2694-.90432l4.6625-.66254 2.079-4.11897c.1875-.371245.6949-.371245.8824 0l2.079 4.11897 4.6626.66254c.4198.05902.5825.60542.2684.90432l-3.3527 3.19468.7901 4.5026c.0743.4217-.3427.752-.7101.5635l-4.1799-2.1475-4.178 2.1475z">
+                          </path>
+                        </g>
+                      </svg></div>
+                  </div>
+                </div>
+                <p class="comment-paragreaph">“For months I tried numerous remedies to get rid of mice. I'd catch them
+                  in traps (ugh!). I thought that I'd found (and secured) every method where they could be entering the
+                  apartment. They still returned....Until I tried VAMOOSE! It's been 2 weeks and I have not seen any
+                  mice or droppings! I had 4 packets, I've only used 2, and they've provided coverage though out my
+                  entire apartment. I am so happy with this product.”</p><img src="images/11.jpg" loading="lazy"
+                  sizes="(max-width: 1408px) 100vw, 1408px" alt="" class="feedback-produc-image">
+              </div>
+            </div>
+            <h2 class="title colored"><strong>Don't Let Mice Ruin Your Kitchen. Reclaim Your Home Today</strong></h2>
+            <div class="rich-text no-negative w-richtext">
+              <p>Finally, stop letting mice control your home. </p>
+              <p>
+                <a href="https://trk.bugmd.com/preclick"><strong>Because the makers of Vamoose are 100% confident this
+                    will work for you, but if you aren't happy with it…</strong></a>
+              </p>
+            </div>
+            <div class="w-layout-hflex guarantee-wrapper"><img src="images/guarantee.png" loading="lazy"
+                alt="guarantee-jpg" class="guarantee-bage">
+              <p class="no-margine">If you’re on the fence, know this – there is a <strong>30-day satisfaction
+                  guarantee.</strong></p>
+            </div>
+            <div class="w-layout-vflex cta-box">
+              <p class="product-description"><strong>Click the button below </strong>to visit their website and see if
+                there’s any stock left. These pouches <strong>sell out FAST</strong>, especially during sales.</p>
+              <a href="https://trk.bugmd.com/preclick" target="_blank"
+                class="asset-holder product-image w-inline-block"><img src="images/13.png" loading="lazy"
+                  alt="main-pd-image" class="image-asset product-image"></a>
+              <div class="cta-button-wrapper spaced">
+                <a href="https://trk.bugmd.com/preclick" target="_blank" class="btn-primary v2 w-button"><strong>GET UP
+                    TO 68% OFF NOW</strong></a>
+                <link rel="prefetch" href="https://trk.bugmd.com/preclick">
+              </div>
+              <div class="cta-text">⚡️Sell-out risk: High⚡</div>
+            </div>
+          </div>
+        </div>
+        <div class="w-layout-vflex rigth-fixed max-width">
+          <div class="w-layout-vflex sidebar">
+            <h3 class="heading">Customer Reviews</h3>
+            <div class="w-layout-vflex review-wrapper">
+              <div class="w-layout-vflex review-item">
+                <div class="full-width centered"><img src="images/rating-stars-4.5_1rating-stars-4.5.jpg" loading="lazy"
+                    alt="rating-stars-4.5" class="review-stars"></div>
+                <p class="review-description"><em>“Since I started using Vamoose I haven't seen a mouse. I purchased the
+                    glue traps, powder, and I continued to see a mouse running around the house but with Vamoose I
+                    haven't seen a mouse …I place them in every nook and cranny where I've seen mice. They're convenient
+                    and not at all messy.”</em></p>
+                <div class="reviewer-name"><strong>Avril S.</strong></div>
+                <div class="reviewer-geo"><strong>Irwin, PA</strong></div>
+              </div>
+              <div class="w-layout-vflex review-item">
+                <div class="full-width centered"><img src="images/rating-stars-4.5_1rating-stars-4.5.jpg" loading="lazy"
+                    alt="rating-stars-4.5" class="review-stars"></div>
+                <p class="review-description"><em>“For months I tried numerous remedies to get rid of mice. I'd catch
+                    them in traps (ugh!). I thought that I'd found (and secured) every method where they could be
+                    entering the apartment. They still returned....Until I tried VAMOOSE! It's been 2 weeks and I have
+                    not seen any mice or droppings! I had 4 packets, I've only used 2, and they've provided coverage
+                    though out my entire apartment. I am so happy with this product.”</em></p>
+                <div class="reviewer-name"><strong>Arnette R.</strong></div>
+                <div class="reviewer-geo"><strong>Houston, TX</strong></div>
+              </div>
+            </div>
+          </div>
+          <div class="product-wrap">
+            <a href="https://trk.bugmd.com/preclick" target="_blank" class="sidebar-product w-inline-block">
+              <div class="sidebar-image-wrapper"><img src="images/13.png" alt="" class="image sidebar-product-iamge">
+              </div>
+              <h3 class="sidebar-product-title"><span class="underline"><strong>Vamoose Rodent Repellent
+                    Pouches</strong></span></h3>
+            </a>
+            <p class="review-description">Get Yours Now With up to 68% OFF!</p>
+            <div class="cta-button-wrapper spaced">
+              <a href="https://trk.bugmd.com/preclick" target="_blank" class="btn-primary v2 w-button">CHECK
+                AVAILABILITY →</a>
+              <link rel="prefetch" href="https://trk.bugmd.com/preclick">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="w-layout-vflex source-holder">
+        <div><strong>CITATIONS</strong>:</div>
+        <ul role="list" class="source-list">
+          <li class="no-margine">
+            <a href="https://www.purdue.edu/newsroom/archive/releases/2019/Q1/study-identifies-essential-oil-compounds-most-toxic-to-bed-bugs.html"
+              target="_blank" class="link-text-black">Study identifies essential oil compounds most toxic to bed bugs -
+              Purdue University News</a>
+          </li>
+          <li class="no-margine">
+            <a href="https://ecommons.cornell.edu/server/api/core/bitstreams/5d8a04f8-2ec5-42fd-8877-da0268c3d551/content"
+              target="_blank" class="link-text-black">Cottonseed Oil Profile</a>
+          </li>
+          <li class="no-margine">
+            <a href="https://extension.colostate.edu/topic-areas/insects/insect-control-horticultural-oils-5-569/"
+              target="_blank" class="link-text-black">Insect Control: Horticultural Oils - 5.569 - Extension </a>
+          </li>
+        </ul>
+      </div> -->
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+      <div class="row text-center _0-padding"><img src="images/footer-logo.jpg" alt="footer-logo"
+          class="logo mb2 mid hide">
+        <div class="w-layout-hflex footer-links">
+          <a href="https://bugmd.com/policies/terms-of-service" target="_blank" class="afooter">TERMS AND
+            CONDITIONS</a>
+          <a href="https://bugmd.com/policies/privacy-policy" target="_blank" class="afooter">PRIVACY POLICY</a>
+          <a href="https://bugmd.com/policies/refund-policy" target="_blank" class="afooter">Returns &amp; Refund
+            Policy</a>
+        </div>
+        <p class="footer-text"><strong>*When used as directed.</strong><br></p>
+        <p class="footer-text">THIS IS AN ADVERTISEMENT AND NOT AN ACTUAL NEWS ARTICLE, BLOG, OR CONSUMER PROTECTION
+          UPDATE</p>
+        <p class="footer-text more">MARKETING DISCLOSURE: This website is owned and operated by BugMD. The advertorial
+          contains fictitious product reviews that reflect a composite of BugMd customer&#x27;s experiences using the
+          product.</p>
+        <p class="footer-text">AFFILIATE DISCLOSURE: This advertorial contains affiliate links withing the content and
+          display ads. The owner of this site receives a commission if you make a purchase after clicking on the
+          affiliate links.</p>
+      </div>
+    </div>
+    <div data-w-id="389c7bd4-8449-61f4-501b-f9b121197a15" class="cta-fixed-manual">
+      <a href="https://trk.bugmd.com/preclick" target="_blank" class="btn-primary v2 fixed w-button">CHECK AVAILABILITY
+        →</a>
+      <link rel="prefetch" href="https://trk.bugmd.com/preclick">
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6867c5f945e643c1267d88da"
+    type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"></script>
+  <script src="js/ptcs-template-4ea0c9f952a-a4b8af11584b1.js" type="text/javascript"></script>
+  <!--  Dynamic Copyright Year  -->
+  <script>
+    // Dynamic Copyright Year
+    var date = new Date().getFullYear();
+    document.getElementById("year").innerHTML = date;
+  </script> <!--  Google Tag Manager  -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l !== 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MRJVL9L');
+  </script>
+  <!--  End Google Tag Manager  -->
+  <!--  Google tag (gtag.js)  -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-792655275"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'AW-792655275');
+  </script>
+  <!--  Event snippet for Squito Stickers - Landing Page conversion page  -->
+  <script>
+    gtag('event', 'conversion', { 'send_to': 'AW-792655275/sxw5CLjr7qcBEKvr-_kC' });
+  </script>
+  <!--  Facebook Pixel  -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e); t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '214583150757813');
+    fbq('track', 'PageView', {
+      content_ids: [41148396470443, 44778642276583],
+    });
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=214583150757813&ev=PageView&noscript=1">
+  </noscript>
+  <button id="playButton"
+    style="display: none; border-radius: 15px; padding: 10px; background-color: #007BFF; color: white; border: none; cursor: pointer;">Play
+    Video</button>
+  <!--  Reference the JavaScript file for videos load  -->
+  <script defer="" src="/js-videos/video-meta.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Ensure jQuery is loaded or use vanilla JavaScript
+      window.addEventListener('scroll', function () {
+        // Get scroll position
+        const scroll = window.scrollY || window.pageYOffset;
+        // Get document height
+        const dheight = document.documentElement.scrollHeight - window.innerHeight;
+        // Check if scrolled past 1/2.4 of document height
+        if (scroll >= dheight / 2.4) {
+          document.querySelector('.cta-fixed-manual')?.classList.add('stickybtn_fixed');
+        } else {
+          document.querySelector('.cta-fixed-manual')?.classList.remove('stickybtn_fixed');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

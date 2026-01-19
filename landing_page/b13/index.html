@@ -1,0 +1,531 @@
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Thu Aug 21 2025 14:44:27 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="68a5b8688ff11016caedf163" data-wf-site="68a5b8678ff11016caedf104">
+<head>
+  <meta charset="utf-8">
+  <title>BugMD</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="b13/css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="b13/css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="b13/css/b13-e326fe.webflow.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic","Poppins:regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"]  }});</script>
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="b13/images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="b13/images/webclip.png" rel="apple-touch-icon">
+  <script>
+    // Get values from PHP variables
+    const lp1 = "<?php echo htmlspecialchars($lp1, ENT_QUOTES, 'UTF-8'); ?>";
+    const dynamicImg = "<?php echo htmlspecialchars($img, ENT_QUOTES, 'UTF-8'); ?>";
+    // Capture the full current URL
+    let [baseUrl, fragment] = window.location.href.split("#");
+    let url = new URL(baseUrl);
+    let searchParams = new URLSearchParams(url.search);
+    // Remove all existing lpv parameters
+    while (searchParams.has("lpv")) {
+      searchParams.delete("lpv");
+    }
+    // Add the single correct lpv value
+    if (lp1) {
+      searchParams.append("lpv", lp1);
+    }
+    // Add or update img parameter if we have a dynamic value
+    if (dynamicImg) {
+      const existingImg = searchParams.get("img");
+      if (existingImg !== dynamicImg) {
+        searchParams.set("img", dynamicImg); // Add or update img
+      }
+    }
+    // Reconstruct the full URL
+    const newUrl = `${url.origin}${url.pathname}?${searchParams.toString()}${fragment ? '#' + fragment : ''}`;
+    // Update the URL in the address bar without reloading
+    window.history.replaceState('', '', newUrl);
+  </script>
+  <script type="text/javascript"
+    src="https://trk.bugmd.com/pretrack.js?rtkcmpid=<?php echo htmlspecialchars($redtrack, ENT_QUOTES, 'UTF-8'); ?>"></script>
+</head>
+<body class="body">
+  <div class="w-layout-vflex page-wrapp">
+    <section class="header">
+      <div class="logo-box"><img loading="lazy" src="b13/images/bnd-logo.png" alt="bnd-logo" class="image"></div>
+    </section>
+    <section class="section hero">
+      <div class="w-layout-blockcontainer container w-container">
+        <div class="section-wrap">
+          <div class="w-layout-vflex title-wrap hero">
+            <h1 class="heading main"> <?php echo htmlspecialchars($headlineParam); ?></h1>
+            <div class="sub-heading hero">Put It In Any Room. It&#x27;s That Easy!</div>
+          </div>
+          <div class="w-layout-grid grid">
+            <div id="w-node-bb742f46-07a3-ea60-f3e0-84c536b21c27-caedf163" class="hero-left">
+               <img src="<?php echo htmlspecialchars($imageUrl ?: 'b13/images/main-image.jpg'); ?>" loading="eager"
+                sizes="(max-width: 479px) 96vw, (max-width: 767px) 97vw, (max-width: 991px) 98vw, 800px" alt=""
+                class="hero-image" style="opacity: <?php echo $imageUrl ? '1' : '1'; ?>">
+            </div>
+            <div class="hero-right">
+              <h2 class="title">Eliminate Mice &amp; Rats, With No Mess - <span class="underline">Introducing Our Easy-to-Use Vamoose™ Pouches</span></h2>
+              <div class="pred w-richtext">
+                <ul role="list" class="list">
+                  <li><strong>Lightweight &amp; Versatile: </strong>Effectively repels mice as well as rats, squirrels, and other rodents. Vamoose™ can also be placed anywhere in the home like your living room, kitchen, closets, basements, garages, and even inside your car or RV!</li>
+                </ul>
+                <ul role="list" class="list">
+                  <li><strong>Family-Safe* Protection:</strong> Because it’s made with plant based active ingredients, it’s safe* around children and pets - no more dangerous traps or harmful poisons. A must-have for any home, providing reliable protection you can trust.</li>
+                  <li><strong>No Mess Solution:</strong> No nasty traps, no gross poison, and no dead mice to clean up, just an easy to use pouch that you can just put down anywhere in your home.</li>
+                </ul>
+                <ul role="list" class="list">
+                  <li><strong>Lasting Protection:</strong> Each pouch provides up to 30 days of continuous mouse repelling power, keeping mice away 24/7 even while you sleep.</li>
+                </ul>
+              </div>
+              <a href="https://trk.bugmd.com/preclick" target="_blank" class="btn-primary w-inline-block">
+                <div>GET UP TO 68% OFF VAMOOSE NOW &gt;&gt;&gt;</div>
+              </a>
+            </div>
+          </div>
+          <div class="comment-wrap-hero">
+            <div class="w-layout-hflex fb-comment"><img loading="lazy" src="b13/images/customer-revew-image-hero.jpg" alt="customer-revew-image-hero" class="fb-account-image">
+              <div class="w-layout-vflex fb-comment-info">
+                <div class="w-layout-vflex fb-comment-text-wrap">
+                  <div class="fb-comment-title"><strong>Catherine Hullverson</strong></div>
+                  <p class="fb-comment-description">Smell great and they work!  I live in the woods and have always fought mice.  It is great to find a product that I enjoy using and the mice are gone!<br></p>
+                </div>
+                <div class="w-layout-hflex fb-comment-action">
+                  <div class="w-layout-hflex fb-comment-action-buttons">
+                    <div class="fb-comment-action-btn"><strong>Like</strong></div>
+                    <div class="fb-comment-action-btn"><strong>Reply</strong></div>
+                    <div class="fb-comment-action-btn">3w</div>
+                  </div>
+                  <div class="w-layout-hflex fb-comment-action-like">
+                    <div class="svg-icon fb-like w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 24 25" fill="none">
+                        <g clip-path="url(#clip0_2334_32)">
+                          <path d="M23.9998 0.586914H0.0996094V24.4871H23.9998V0.586914Z" fill="url(#pattern0_2334_32)"></path>
+                        </g>
+                        <defs>
+                          <pattern id="pattern0_2334_32" patterncontentunits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_2334_32" transform="scale(0.00195312)"></use>
+                          </pattern>
+                          <clippath id="clip0_2334_32">
+                            <rect width="24" height="25" fill="white"></rect>
+                          </clippath>
+                          <image id="image0_2334_32" width="512" height="512" preserveaspectratio="none" xlink:href="data:image/png;base64,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">
+                        </image></defs>
+                      </svg></div>
+                    <div class="svg-icon fb-like w-embed"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 140 141" fill="none">
+                        <g clip-path="url(#clip0_2481_44)">
+                          <path d="M50.633 102.7H35.201C33.9859 102.7 32.9951 101.704 32.9951 100.482V64.8516C32.9951 63.6297 33.9859 62.6335 35.201 62.6335H50.633C51.8481 62.6335 52.8389 63.6297 52.8389 64.8516V100.482C52.8295 101.704 51.8388 102.7 50.633 102.7ZM58.2228 94.326V68.799C58.2228 62.5677 59.9894 56.3081 63.2795 51.0166C65.2891 47.7835 69.7944 42.6047 72.3181 39.9261C72.8789 39.3246 74.9166 37.5576 74.9166 36.5895C74.9166 35.3489 75.0568 33.347 75.1035 29.6157C75.1316 27.2472 77.0477 25.3017 79.4032 25.3204H79.506C83.628 25.3956 84.946 29.2303 84.946 29.2303C84.946 29.2303 88.4698 36.223 85.1796 44.7758C82.4036 52.0035 81.8428 52.5862 81.8428 52.5862C81.8428 52.5862 80.9454 53.8926 83.7869 53.8362C83.7869 53.8362 101.135 53.7611 101.733 53.7611C103.014 53.7611 107.098 54.9359 106.865 60.171C106.697 64.0433 104.304 65.3967 103.079 65.8384C102.836 65.923 102.808 66.2614 103.033 66.393C104.285 67.1261 106.846 68.9776 106.79 71.816C106.715 75.256 105.341 76.5248 102.481 77.3143C102.219 77.3895 102.173 77.7373 102.406 77.8688C103.491 78.4892 105.351 80.0024 105.238 83.0663C105.126 86.1867 102.883 87.2864 101.658 87.6623C101.415 87.7375 101.369 88.0571 101.584 88.2075C102.36 88.7432 103.509 89.9556 103.453 92.4463C103.425 93.7621 102.986 94.7208 102.434 95.4069C101.565 96.4877 100.2 97.0517 98.817 97.0611L60.3259 97.1363C60.3165 97.1457 58.2228 97.1457 58.2228 94.326Z" fill="white"></path>
+                          <path d="M70 140.99C108.66 140.99 140 109.431 140 70.4999C140 31.569 108.66 0.00927734 70 0.00927734C31.3401 0.00927734 0 31.569 0 70.4999C0 109.431 31.3401 140.99 70 140.99Z" fill="#ED5168"></path>
+                          <path d="M69.9998 50.941C66.8685 31.8428 29.7607 30.386 29.7607 59.0334C29.7607 84.4194 69.9998 107.822 69.9998 107.822C69.9998 107.822 110.239 84.1092 110.239 59.0334C110.239 30.386 73.131 31.8428 69.9998 50.941Z" fill="white"></path>
+                        </g>
+                        <defs>
+                          <clippath id="clip0_2481_44">
+                            <rect width="140" height="141" fill="white"></rect>
+                          </clippath>
+                        </defs>
+                      </svg></div>
+                    <div class="like-number">45</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section grey">
+      <div class="w-layout-blockcontainer container w-container">
+        <div class="section-wrap">
+          <div class="w-layout-vflex title-wrap">
+            <h2 class="heading">It&#x27;s So Simple!</h2>
+            <div class="sub-heading">No complicated setup or dangerous handling required.</div>
+          </div>
+          <div class="steps-container">
+            <div id="w-node-_7f77b199-d67c-2f14-3739-bef406283f3f-caedf163" class="step-item">
+              <a href="https://trk.bugmd.com/preclick" target="_blank" class="step-video-link w-inline-block">
+                <div class="video-container-copy">
+                  <div class="code-embed-2 w-embed"><video id="video" autoplay="" muted="" loop="" playsinline="" preload="auto" style="width: 100%; height:100%; object-fit: cover;">
+                      <source src="videos/vid1-transcode.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video></div>
+                </div>
+              </a>
+              <h3 class="steps-title">EASY PLACEMENT</h3>
+              <p class="steps-description">Just remove the pouches from the packaging and place it all over the home.</p>
+            </div>
+            <div id="w-node-_7f77b199-d67c-2f14-3739-bef406283f4a-caedf163" class="step-item">
+              <a href="https://trk.bugmd.com/preclick" target="_blank" class="step-video-link w-inline-block">
+                <div class="video-container-copy">
+                  <div class="code-embed-2 w-embed"><video id="video" autoplay="" muted="" loop="" playsinline="" preload="auto" style="width: 100%; height:100%; object-fit: cover;">
+                      <source src="videos/vid2-transcode.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video></div>
+                </div>
+              </a>
+              <h3 class="steps-title">ESSENTIAL OILS CREATE CONFUSION</h3>
+              <p class="steps-description">Our lab-tested mix of Cornmint, Citronella, and Linseed oils overwhelms rodents’ sensitive olfactory systems.</p>
+            </div>
+            <div id="w-node-_7f77b199-d67c-2f14-3739-bef406283f55-caedf163" class="step-item">
+              <a href="https://trk.bugmd.com/preclick" target="_blank" class="step-video-link w-inline-block">
+                <div class="video-container-copy">
+                  <div class="code-embed-2 w-embed"><video id="video" autoplay="" muted="" loop="" playsinline="" preload="auto" style="width: 100%; height:100%; object-fit: cover;">
+                      <source src="videos/vid3-transcode.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video></div>
+                </div>
+              </a>
+              <h3 class="steps-title">SCENT BARRIER FORCES RETREAT</h3>
+              <p class="steps-description">Creates an unbearable environment, forcing mice and rats to flee. </p>
+            </div>
+            <div class="w-embed">
+              <style>
+  video {
+  	border-radius: 15px;
+  }
+  .w--open .w-icon-dropdown-toggle {
+  	transform: rotate(180deg);
+  }
+</style>
+            </div>
+          </div>
+          <p class="steps-bottom">Unlike store-bought oils, Vamoose™’s unique formula is optimized for maximum repulsion, lasting up to 30 days.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="w-layout-blockcontainer container w-container">
+        <div class="section-wrap">
+          <div class="w-layout-vflex title-wrap">
+            <h2 class="heading">Why Do Home Inspectors Love Them?</h2>
+          </div>
+          <div class="section-four-outer">
+            <div id="video-container-6" class="image-column w-node-bb742ce9-9f79-6525-078a-97eb144b78c2-caedf163"><img sizes="(max-width: 650px) 100vw, 650px" srcset="b13/images/2-p-500.jpg 500w, b13/images/2.jpg 650w" alt="2" src="b13/images/2.jpg" loading="lazy" class="img full-width"></div>
+            <div class="content-wrapp">
+              <div class="rich-text w-richtext">
+                <p><strong>🚨 Alarming Fact: 21 million homes are invaded by rodents each winter.</strong></p>
+                <p>‍</p>
+                <p>Most mouse invasions start with just one or two mice finding their way inside. A small crack under a door or tiny opening near your pipes, and suddenly you have a bunch of unwanted house guests. They nest and breed faster than people think! </p>
+                <p>‍</p>
+                <p>‍<strong>This can happen to anyone.</strong></p>
+                <p>‍</p>
+                <p>Keeping Vamoose™ in your home is one of the smartest decisions you can make for you and your family. Just place the pouches all over your home where mice can hide like your living room, kitchen, bathroom, basement, garage and more! They’ll create a strong scent barrier that sends these mice running.</p>
+                <p>‍</p>
+                <p>It&#x27;s so incredibly simple to use, and for good reason. Even children could do it. No more dangerous traps, toxic poisons, or expensive exterminator visits.</p>
+                <p>‍</p>
+                <p>Having at least a few pouches per room where you&#x27;ve seen mice is vital. It can help save you thousands in property damage or help protect you from nasty diseases that mice can carry.</p>
+              </div>
+              <a href="https://trk.bugmd.com/preclick" target="_blank" class="btn-primary w-inline-block">
+                <div>GET UP TO 68% OFF VAMOOSE NOW &gt;&gt;&gt;</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section mob-less-space">
+      <div class="w-layout-blockcontainer container w-container">
+        <div class="section-wrap">
+          <div class="w-layout-vflex title-wrap">
+            <h2 class="heading">Why Customers Prefer Vamoose™</h2>
+          </div>
+          <div class="section-four-outer mob-reverce">
+            <div class="content-wrapp">
+              <div class="rich-text w-richtext">
+                <p>Vamoose has<strong> a 4.8 out of 5 stars</strong> with <strong>over 2,000 success stories.</strong></p>
+                <p>‍</p>
+                <p>Many <strong>Home Inspectors and even some Exterminators</strong> approve of <strong>Vamoose™</strong>. See what some people have been saying:</p>
+                <p>‍</p>
+                <p><em>&quot;I&#x27;ve been catching mice in the attic, with the typical mouse traps, baited with peanut butter, for the last several months. Bought Vamoose and put several packets in the attic and basement. It&#x27;s only been a month, but so far no mice!&quot; - Ronald Marcey</em></p>
+                <p>‍</p>
+                <p><em>&quot;Mice got into our attic from roof damage during a storm. We have an abandoned house next door as well. So it also has been a battle for a few years as it is. Put some of these around the garage and attic and havent heard any mice since. Worked the first day. &quot; - Nicholas Slead</em></p>
+              </div>
+              <a href="https://trk.bugmd.com/preclick" target="_blank" class="btn-primary w-inline-block">
+                <div>GET UP TO 68% OFF VAMOOSE NOW &gt;&gt;&gt;</div>
+              </a>
+            </div>
+            <div id="video-container-6" class="image-column w-node-_144fc179-4bf4-1c9f-470b-0562706e6de2-caedf163"><img sizes="(max-width: 650px) 100vw, 650px" srcset="b13/images/3-p-500.jpg 500w, b13/images/3.jpg 650w" alt="3" src="b13/images/3.jpg" loading="lazy" class="img full-width"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section grey">
+      <div class="w-layout-blockcontainer container w-container">
+        <div class="section-wrap">
+          <div class="w-layout-vflex title-wrap">
+            <h2 class="heading">What Customers Are Saying...</h2>
+          </div>
+          <div class="comment-wrapper">
+            <div id="w-node-e3d24015-72d1-ca94-58ff-3606f06ab68a-caedf163" class="comment-item">
+              <div class="reviewr-info"><img loading="lazy" src="b13/images/womaninher30s.jpg" alt="womaninher30s" class="commentor-picture">
+                <div class="customer-name">Debbie R.</div>
+              </div>
+              <div class="feedback-title-wrapper w-clearfix"><img loading="lazy" src="b13/images/stars.png" alt="stars" class="image-19">
+                <div class="feedback-title">No mice droppings around the house</div>
+              </div>
+              <div class="feedback-date">Reviewed in the United States on July 15, 2025</div>
+              <div class="verif-text">Verified Purchase</div>
+              <div class="comment-description">I was sceptical at first when I received my package I immediately placed the packets around my home and within 24 hours I noticed there were no mice droppings around the house.....I am very pleased with this product and will let my friends know who have the same problem - we live in the suburbs and at this time of year they run rampant - all the neighbors are having the same problem. Thank you so much !!!</div>
+            </div>
+            <div id="w-node-_23346378-b2eb-9c04-f611-73c35cd0e302-caedf163" class="comment-item">
+              <div class="reviewr-info"><img loading="lazy" src="b13/images/womaninher40s.jpg" alt="womaninher40s" class="commentor-picture">
+                <div class="customer-name">Ruth C.</div>
+              </div>
+              <div class="feedback-title-wrapper w-clearfix"><img loading="lazy" src="b13/images/stars.png" alt="stars" class="image-19">
+                <div class="feedback-title"><strong>I highly recommend this product.</strong></div>
+              </div>
+              <div class="feedback-date">Reviewed in the United States on May 22, 2025</div>
+              <div class="verif-text">Verified Purchase</div>
+              <div class="comment-description">I had some little mice that got inside my house , looking for a warm place for the cold weather. The 1st day it arrived at the house I opened it and placed the 4 little bags around. The smell was nise and minty. But, I have not seen any signs of the mice since I put them out! I highly recommend this product.</div>
+            </div>
+            <div id="w-node-_116ebe55-8a3e-7523-ae1f-ad489bdddfe5-caedf163" class="comment-item">
+              <div class="reviewr-info"><img loading="lazy" src="b13/images/womaninher60s.jpg" alt="womaninher60s" class="commentor-picture">
+                <div class="customer-name">Melanie M.</div>
+              </div>
+              <div class="feedback-title-wrapper w-clearfix"><img loading="lazy" src="b13/images/stars.png" alt="stars" class="image-19">
+                <div class="feedback-title"><strong>Mice seem to be gone!</strong></div>
+              </div>
+              <div class="feedback-date">Reviewed in the United States on March 8, 2025</div>
+              <div class="verif-text">Verified Purchase</div>
+              <div class="comment-description">Having just moved into a house in the country, we weren’t surprised at the mice - but THEY had to GO! They were everywhere!...they came in and got distributed in every room with multiple packs in kitchen and storage areas. It took no time and all sounds, signs and mice seem to be gone! We won’t let up, and will always be on alert - especially when the farmers bring in their crops!!</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="w-layout-blockcontainer container w-container">
+        <div class="section-wrap">
+          <div class="garantee"><img loading="lazy" src="b13/images/bs_garantee_tiny.jpg" alt="bs_garantee_tiny" class="satisfaction-badge">
+            <h2 class="heading">30 Day Satisfaction Guarantee!</h2>
+            <div>
+              <div class="w-richtext">
+                <p>We want you to be 100% satisfied with Vamoose™. If you&#x27;re not entirely happy with your purchase within 30 days, simply contact our dedicated customer service team for your return.</p>
+              </div>
+              <a href="https://trk.bugmd.com/preclick" target="_blank" class="btn-primary w-inline-block">
+                <div>GET UP TO 68% OFF VAMOOSE NOW &gt;&gt;&gt;</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section grey">
+      <div class="w-layout-blockcontainer container w-container">
+        <div class="section-wrap">
+          <div class="w-layout-vflex title-wrap">
+            <h2 class="heading">You Have a Question? We Can Help!</h2>
+          </div>
+          <div class="dropdown-wrap">
+            <div data-delay="0" data-hover="false" class="faq-box w-dropdown">
+              <div id="toggle-1" class="faq-item w-dropdown-toggle">
+                <div class="icon w-icon-dropdown-toggle"></div>
+                <h4 class="faq-heading"><strong>How does BugMD Vamoose™ work?</strong></h4>
+              </div>
+              <nav id="dropdown-list-1" class="dropdown-list w-dropdown-list">
+                <p class="faq-para">Each pouch of Vamoose is filled with diatomaceous earth infused with a potent combination of essential oils: Cornmint Oil, Citronella Oil, and Linseed Oil. Each has distinctive scents and properties that have been shown to naturally repel rodents for up to 30 days.</p>
+              </nav>
+            </div>
+            <div data-delay="0" data-hover="false" class="faq-box w-dropdown">
+              <div class="faq-item w-dropdown-toggle">
+                <div class="icon w-icon-dropdown-toggle"></div>
+                <h4 class="faq-heading">Is Vamoose good to use around kids &amp; pets?</h4>
+              </div>
+              <nav class="dropdown-list w-dropdown-list">
+                <p class="faq-para">Absolutely! BugMD products don&#x27;t contain harsh chemicals. In fact, Vamoose uses an essential oil-powered formula that’s safe to use around people and pets when used as directed.</p>
+              </nav>
+            </div>
+            <div data-delay="0" data-hover="false" class="faq-box w-dropdown">
+              <div class="faq-item w-dropdown-toggle">
+                <div class="icon w-icon-dropdown-toggle"></div>
+                <h4 class="faq-heading">Why do the majority of customers choose the Vamoose subscription?</h4>
+              </div>
+              <nav class="dropdown-list w-dropdown-list">
+                <p class="faq-para">Over 55% of our customers choose the subscription because rodent problems require consistent, ongoing protection. Not to mention every subscription gets a price lock guarantee, so even if we raise the price of Vamoose in the future, you still get the original low price. Customers save 15% on today&#x27;s order and on all future orders. Every customer can modify or cancel anytime.<br></p>
+              </nav>
+            </div>
+            <div data-delay="0" data-hover="false" class="faq-box w-dropdown">
+              <div class="faq-item w-dropdown-toggle">
+                <div class="icon w-icon-dropdown-toggle"></div>
+                <h4 class="faq-heading">Can I just use essential oils from the store instead?</h4>
+              </div>
+              <nav class="dropdown-list w-dropdown-list">
+                <p class="faq-para">Store-bought essential oils aren&#x27;t formulated for pest control and lack the proper concentration and blend ratios. Vamoose uses a proprietary blend specifically designed for maximum rodent repelling effectiveness, in combination with diatomaceous earth its something you simply can’t replicate at home.</p>
+              </nav>
+            </div>
+            <div data-delay="0" data-hover="false" class="faq-box w-dropdown">
+              <div class="faq-item w-dropdown-toggle">
+                <div class="icon w-icon-dropdown-toggle"></div>
+                <h4 class="faq-heading">What if Vamoose doesn&#x27;t work for my specific rodent problem?</h4>
+              </div>
+              <nav class="dropdown-list w-dropdown-list">
+                <p class="faq-para">We offer a 30-day satisfaction guarantee because we&#x27;re so confident in our formula and have heard thousands of customer success stories with Vamoose. If you don&#x27;t see results, we&#x27;ll either help you adjust your application method or process a refund for you.</p>
+              </nav>
+            </div>
+            <div data-delay="0" data-hover="false" class="faq-box w-dropdown">
+              <div class="faq-item w-dropdown-toggle">
+                <div class="icon w-icon-dropdown-toggle"></div>
+                <h4 class="faq-heading">Why is there limited inventory?</h4>
+              </div>
+              <nav class="dropdown-list w-dropdown-list">
+                <p class="faq-para">Due to high demand and constant rodent activity, we often experience stock shortages with Vamoose. We do reserve inventory for our subscription customers first, which guarantees rodent protection year round.</p>
+              </nav>
+            </div>
+            <div data-delay="0" data-hover="false" class="faq-box w-dropdown">
+              <div class="faq-item w-dropdown-toggle">
+                <div class="icon w-icon-dropdown-toggle"></div>
+                <h4 class="faq-heading">Why do people use Vamoose™ instead of Mousetraps and Poisons?</h4>
+              </div>
+              <nav class="dropdown-list w-dropdown-list">
+                <p class="faq-para">Unlike traps and poison, Vamoose prevents rodents from entering your space in the first place - no dead rodents to dispose of, no risk to children/pets, and no ongoing maintenance. It&#x27;s prevention rather than elimination, which is safer, cleaner, and more humane.</p>
+              </nav>
+            </div>
+            <div data-delay="0" data-hover="false" class="faq-box w-dropdown">
+              <div class="faq-item w-dropdown-toggle">
+                <div class="icon w-icon-dropdown-toggle"></div>
+                <h4 class="faq-heading">How long do the Pouches Last?</h4>
+              </div>
+              <nav class="dropdown-list w-dropdown-list">
+                <p class="faq-para">Vamoose&#x27;s potent diatomaceous earth and essential oil formula gives you 30 days of rodent relief without any of the harsh “ever-lasting” chemicals. Exactly why over 55% of customers choose our reliable subscription - so they never have to worry about running out. With automatic delivery every 30 days, you maintain that protective barrier continuously without gaps that let rodents return.</p>
+              </nav>
+            </div>
+            <div data-delay="0" data-hover="false" class="faq-box w-dropdown">
+              <div class="faq-item w-dropdown-toggle">
+                <div class="icon w-icon-dropdown-toggle"></div>
+                <h4 class="faq-heading">Is this a legitimate company I can trust?</h4>
+              </div>
+              <nav class="dropdown-list w-dropdown-list">
+                <p class="faq-para">BugMD has been in business for over 5 years with tens of thousands of satisfied customers. We have extremely secure payment processing, and very responsive customer service. We pride ourselves in keeping American homes rodent and pest free using Nature’s ingredients.</p>
+              </nav>
+            </div>
+            <div data-delay="0" data-hover="false" class="faq-box w-dropdown">
+              <div class="faq-item w-dropdown-toggle">
+                <div class="icon w-icon-dropdown-toggle"></div>
+                <h4 class="faq-heading">How fast will I receive my order?</h4>
+              </div>
+              <nav class="dropdown-list w-dropdown-list">
+                <p class="faq-para">All orders will be shipped out from our United States warehouse the same or next business day. With most customers receiving their order in 2-4 days!</p>
+              </nav>
+            </div>
+          </div>
+          <div class="icnons-section">
+            <div class="icons-wrapper">
+              <div class="w-layout-hflex icon-item-box"><img src="b13/images/QUALITYASSURED.png" loading="lazy" alt="QUALITYASSURED" class="icon-box-image">
+                <div class="w-layout-vflex info-wrap">
+                  <div class="icon-box-description">Quality Assured</div>
+                  <div class="icon-box-title">We take pride in our natural products, ensuring they are not only safe but also effective, formulated to quality standards for your home.</div>
+                </div>
+              </div>
+              <div class="w-layout-hflex icon-item-box"><img src="b13/images/shpping.png" loading="lazy" alt="shpping" class="icon-box-image">
+                <div class="w-layout-vflex info-wrap">
+                  <div class="icon-box-description">Fast &amp; Reliable Shipping</div>
+                  <div class="icon-box-title">We understand that once you&#x27;ve purchased, you want it ASAP. That&#x27;s why we promise to ship it straight to your door.</div>
+                </div>
+              </div>
+              <div class="w-layout-hflex icon-item-box"><img src="b13/images/checkout.png" loading="lazy" alt="checkout" class="icon-box-image">
+                <div class="w-layout-vflex info-wrap">
+                  <div class="icon-box-description">Secure &amp; Easy Checkout</div>
+                  <div class="icon-box-title">We provide a seamless SSL encrypted checkout to ensure your shopping experience is smooth and worry-free.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="w-layout-blockcontainer w-container">
+        <div class="w-layout-vflex footer-content-wrap">
+          <div class="w-layout-vflex footer-logo-wrap"><img loading="lazy" src="b13/images/bnd-logo.png" alt="bnd-logo" class="image footer-logo"></div>
+          <div class="w-layout-vflex footer-content-links">
+            <div class="w-layout-hflex footer-link-wrap">
+              <a href="https://trk.bugmd.com/preclick" target="_blank" class="footer-link w-inline-block">
+                <div>Terms of Service |</div>
+              </a>
+              <a href="https://trk.bugmd.com/preclick" target="_blank" class="footer-link w-inline-block">
+                <div>Privacy Policy |</div>
+              </a>
+              <a href="https://trk.bugmd.com/preclick" target="_blank" class="footer-link w-inline-block">
+                <div>Returns</div>
+              </a>
+            </div>
+            <div class="footer-bottom-info">© BugMD 2025. All Rights Reserved</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div data-w-id="4f262e9f-2444-0df7-18d3-96720836c326" class="cta-button-fixed">
+      <div class="w-layout-vflex cta-button-wrap">
+        <div class="fixed-text">GET UP TO <span class="highlit">68% OFF!</span></div>
+        <a href="https://trk.bugmd.com/preclick" target="_blank" class="btn-primary fixed w-inline-block">
+          <div><strong>GET VAMOOSE NOW &gt;&gt;&gt;</strong></div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=68a5b8678ff11016caedf104" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="b13/js/webflow.js" type="text/javascript"></script>
+  
+  <script>
+    // Dynamic Copyright Year
+    var date = new Date().getFullYear();
+    document.getElementById("year").innerHTML = date;
+  </script> <!--  Google Tag Manager  -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l !== 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MRJVL9L');
+  </script>
+  <!--  End Google Tag Manager  -->
+  <!--  Google tag (gtag.js)  -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-792655275"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'AW-792655275');
+  </script>
+  <!--  Event snippet for Squito Stickers - Landing Page conversion page  -->
+  <script>
+    gtag('event', 'conversion', { 'send_to': 'AW-792655275/sxw5CLjr7qcBEKvr-_kC' });
+  </script>
+  <!--  Facebook Pixel  -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e); t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '214583150757813');
+    fbq('track', 'PageView', {
+      content_ids: [41148396470443, 44778642276583],
+    });
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=214583150757813&ev=PageView&noscript=1">
+  </noscript>
+  <button id="playButton"
+    style="display: none; border-radius: 15px; padding: 10px; background-color: #007BFF; color: white; border: none; cursor: pointer;">Play
+    Video</button>
+  
+  <!--  Reference the JavaScript file for videos load  -->
+  <script defer="" src="/js-videos/video-meta.js"></script>
+</body>
+</html>
